@@ -35,9 +35,7 @@ const Navigation = () => {
             </Col>
             <Col xs={{ order: "Last" }}>
               <Button
-                variant="info"
-                size="lg"
-                className="text-white font-weight-bold"
+                style={{ backgroundColor: "#9873FF" }}
               >
                 Start Applying
               </Button>
