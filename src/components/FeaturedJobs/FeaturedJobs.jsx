@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
@@ -7,7 +6,27 @@ const FeaturedJobs = ({ data }) => {
   console.log(data);
   return (
     <div>
-      <p>{data.id}</p>
+      <Card style={{ width: "30rem", height: "35rem" }}>
+        <Card.Img
+          className="p-5"
+          style={{ height: "300px", width: "400px" }}
+          variant="top"
+          src={data.logo}
+        />
+        <Card.Body>
+          <Card.Title>{data.job_title}</Card.Title>
+          <Card.Text style={{ opacity: "0.7" }}>{data.company_name}</Card.Text>
+          <div className="d-flex gap-5 mb-5">
+            <Button variant="outline-primary" disabled>
+              {data.remote_or_onsite}
+            </Button>
+            <Button variant="outline-primary" disabled>
+              {data.job_type}
+            </Button>
+          </div>
+          <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>View Details</Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 };

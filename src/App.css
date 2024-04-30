@@ -1,0 +1,17 @@
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fetchedData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+@media screen and (max-width: 990px) {
+    .fetchedData {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}

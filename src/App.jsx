@@ -5,7 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import JobCategory from "./components/JobCategory/JobCategory";
 import FeaturedJobs from "./components/FeaturedJobs/FeaturedJobs";
-import { Col, Container, Row } from "react-bootstrap";
+import "./App.css";
 
 const App = () => {
   const data = useLoaderData();
@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <JobCategory />
       <div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mt-5">
           <h1>Featured Jobs</h1>
         </div>
         <p className="d-flex justify-content-center" style={{ opacity: "0.5" }}>
@@ -23,10 +23,12 @@ const App = () => {
           need. Its your future
         </p>
       </div>
-      <div>
+      <div className="grid-container">
+      <div className="fetchedData">
         {data.map((data) => (
           <FeaturedJobs key={data.id} data={data} />
         ))}
+      </div>
       </div>
       <Outlet />
     </div>
