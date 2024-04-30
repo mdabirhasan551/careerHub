@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const FeaturedJobs = ({ data }) => {
-  console.log(data);
   return (
     <div>
       <Card style={{ width: "30rem", height: "35rem" }}>
@@ -27,6 +26,7 @@ const FeaturedJobs = ({ data }) => {
           <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>View Details</Button>
         </Card.Body>
       </Card>
+      
     </div>
   );
 };
