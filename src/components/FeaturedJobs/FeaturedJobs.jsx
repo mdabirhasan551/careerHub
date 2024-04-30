@@ -1,22 +1,13 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
-const FeaturedJobs = () => {
+const FeaturedJobs = ({ data }) => {
+  console.log(data);
   return (
     <div>
-      <div>
-      <div className="d-flex justify-content-center">
-        <h1>Featured Jobs</h1>
-      </div>
-      <p className="d-flex justify-content-center" style={{ opacity: "0.5" }}>
-        Explore thousands of job opportunities with all the information you
-        need. Its your future
-      </p>
-      </div>
-
-
-      <div>
-        
-      </div>
+      <p>{data.id}</p>
     </div>
   );
 };
