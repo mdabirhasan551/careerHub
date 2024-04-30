@@ -16,7 +16,7 @@ const Header = () => {
               you need. Its your future. Come find it. Manage all your job
               application from start to finish.
             </p>
-            <Button style={{ backgroundColor: "#9873FF" }}>Get Started</Button>
+            <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>Get Started</Button>
           </Col>
 
           <Col>

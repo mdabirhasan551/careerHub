@@ -7,16 +7,18 @@ import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
 import Statistics from "./components/Statistics/Statistics.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
 import Navigation from "./components/Navigation/Navigation.jsx";
+import ErrorPage from "./components/Errorpage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/",
     element: <Navigation />,
-    errorElement: <h1>404</h1>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/statistics",

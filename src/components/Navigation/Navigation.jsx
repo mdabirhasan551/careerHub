@@ -13,7 +13,7 @@ const Navigation = () => {
         <Container>
           <Col xs={{ order: "first" }}>
             <h1>
-              <Link to="/home" className="nav-link">
+              <Link to="/" className="nav-link">
                 CareerHub
               </Link>
             </h1>
@@ -35,7 +35,7 @@ const Navigation = () => {
             </Col>
             <Col xs={{ order: "Last" }}>
               <Button
-                style={{ backgroundColor: "#9873FF" }}
+                style={{ backgroundColor: "#9873FF", border: "1px solid"}}
               >
                 Start Applying
               </Button>
