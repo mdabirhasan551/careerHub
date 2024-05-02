@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const FeaturedJobs = ({ data }) => {
   return (
     <div>
+      
       <Card style={{ width: "30rem", height: "35rem" }}>
         <Card.Img
           className="p-5"
@@ -25,7 +26,9 @@ const FeaturedJobs = ({ data }) => {
             </Button>
           </div>
           <Link to={`/jobdetails/${data.id}`}>
-            <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>
+            <Button
+              style={{ backgroundColor: "#9873FF", border: "1px solid" }}
+            >
               View Details
             </Button>
           </Link>

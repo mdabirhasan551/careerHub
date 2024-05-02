@@ -41,6 +41,7 @@ const App = () => {
         <div className="fetchedData">
           {data.slice(0, visibleJobs).map((data) => (
             <FeaturedJobs key={data.id} data={data} />
+            // <JobDetails key={data.id} data={data}/>
           ))}
         </div>
       </div>
