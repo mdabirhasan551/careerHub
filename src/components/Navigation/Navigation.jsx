@@ -14,7 +14,7 @@ const Navigation = () => {
           <Col xs={{ order: "first" }}>
             <h1>
               <Link to="/" className="nav-link">
-                CareerHub
+                CareerPoint
               </Link>
             </h1>
           </Col>

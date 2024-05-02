@@ -10,7 +10,7 @@ import { Button } from "react-bootstrap";
 
 const App = () => {
   const data = useLoaderData();
-  const [visibleJobs, setVisibleJobs] = useState(2); 
+  const [visibleJobs, setVisibleJobs] = useState(4); 
   const [showMore, setShowMore] = useState(true); 
 
   // Function to handle "See More" or "See Less" button click
@@ -18,7 +18,7 @@ const App = () => {
     if (showMore) {
       setVisibleJobs(data.length); 
     } else {
-      setVisibleJobs(2); 
+      setVisibleJobs(4); 
     }
     setShowMore(!showMore); 
   };
@@ -45,7 +45,7 @@ const App = () => {
           ))}
         </div>
       </div>
-      {data.length > 2 && ( // Only show the button if there are more than 2 items
+      {data.length > 4 && ( // Only show the button if there are more than 2 items
         <div className="d-flex justify-content-center mb-5">
           <Button
             style={{ backgroundColor: "#9873FF", border: "1px solid" }}
