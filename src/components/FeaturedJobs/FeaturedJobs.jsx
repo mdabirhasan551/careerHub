@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = ({ data }) => {
   return (
@@ -23,10 +24,13 @@ const FeaturedJobs = ({ data }) => {
               {data.job_type}
             </Button>
           </div>
-          <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>View Details</Button>
+          <Link to={`/jobdetails/${data.id}`}>
+            <Button style={{ backgroundColor: "#9873FF", border: "1px solid" }}>
+              View Details
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
-      
     </div>
   );
 };

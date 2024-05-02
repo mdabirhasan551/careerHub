@@ -10,17 +10,17 @@ import { Button } from "react-bootstrap";
 
 const App = () => {
   const data = useLoaderData();
-  const [visibleJobs, setVisibleJobs] = useState(2); // State to manage visible jobs
-  const [showMore, setShowMore] = useState(true); // State to track if "See More" or "See Less" is shown
+  const [visibleJobs, setVisibleJobs] = useState(2); 
+  const [showMore, setShowMore] = useState(true); 
 
   // Function to handle "See More" or "See Less" button click
   const toggleVisibility = () => {
     if (showMore) {
-      setVisibleJobs(data.length); // Show all jobs when "See More" is clicked
+      setVisibleJobs(data.length); 
     } else {
-      setVisibleJobs(2); // Show only two jobs when "See Less" is clicked
+      setVisibleJobs(2); 
     }
-    setShowMore(!showMore); // Toggle the state between "See More" and "See Less"
+    setShowMore(!showMore); 
   };
 
   return (
